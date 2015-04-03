@@ -144,7 +144,7 @@ endif " }}}
 
 " Automatically close buffer when program exits {{{
 if !exists('g:ConqueTerm_CloseOnEnd')
-    let g:ConqueTerm_CloseOnEnd = 0
+    let g:ConqueTerm_CloseOnEnd = 1
 endif " }}}
 
 " Send function key presses to terminal {{{
