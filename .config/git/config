@@ -1,0 +1,44 @@
+[user]
+	name = mmathers
+	email = mmathers@olf.com
+[color]
+	ui = true
+[core]
+	autocrlf = false
+	whitespace = cr-at-eol
+[diff]
+	tool = vimdiff
+	mnemonicprefix = true
+[log]
+	decorate = short
+[merge]
+	tool = vimdiff
+	ff = false
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[status]
+	short = true
+	showUntrackedFiles = no
+[alias]
+	ds = diff --staged
+	ci = commit
+	co = checkout
+	cd = checkout --detach
+	lg = log --graph
+	lo = log --graph --oneline
+	ff = pull --ff-only
+[difftool "ediff"]
+	cmd = emacs --eval \"(ediff-files \\\"$LOCAL\\\" \\\"$REMOTE\\\")\"
+[mergetool "ediff"]
+	cmd = emacs --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
+[am]
+	keepcr = true
+[advice]
+	detachedHead = false
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.office365.com
+	smtpuser = michael.mathers@openlink.com
+	smtpserverport = 587

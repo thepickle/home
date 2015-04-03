@@ -1,0 +1,25 @@
+#############
+## CVS
+#############
+CVS/
+
+#############
+## SVN
+#############
+.svn/
+
+#############
+## TAGS
+#############
+tags
+cscope.out
+
+#############
+## OLF
+#############
+areaprops
+areaprops.log
+copyw.run
+msbuild_net_property.targets
+msbuild_vc_property.vsprops
+Env_Var_File_For_MSBuild.tmp
